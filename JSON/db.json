@@ -1,8 +1,9 @@
 [
+     
     {
         "title":"COST",
         "dollar":"$24K",
-        "day":"/DAY",
+        "day":"/DAY",                                                                       
         "runrate":"RUNRATE",
         "dollardata":"$0.40",
         "instance":"/Instance HR"
