@@ -47,19 +47,22 @@ table {
 	border-spacing: 0;
 }
 /* RESET.CSS ENDS */
+/* BACKGROUND AND WIDTH OF BODY TAG IS DEFINED */
 body{
     background-image:url("/assests/bg-1@2x.png") ;
     background-repeat:no-repeat;
-	background-size:cover;
+    background-size:cover;
     width:100%;
 }
-.headersection{
+/* WIDTH AND MAX-WIDTH IS DEFINED FOR MAINTAINING GRID STRUCTURE/*
+.headersection{				
 	width:100%;
 }
 .headermaxwidth{
 	max-width:1280px;
 	margin:0px auto;
 }
+/* FUNCTIONALITIES FOR SYMBOLS AND MENU ICON*/ 
 .icon{
 	color:#ffffff;
 }
