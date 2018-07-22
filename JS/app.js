@@ -1,13 +1,14 @@
+//Function to be called while clicking the menu icon
 function openNav() {
     document.getElementById("menu").style.width = "250px";
 }
-
+//Function to be called while closing the menu icon
 function closeNav() {
     document.getElementById("menu").style.width = "0";
 }
 
   const http = new easyHTTP;
-
+//Opening the json file to retrieve the data
   http.get('/JSON/db.json', function(err, posts) {
     if(err) {
       console.log(err);
@@ -15,7 +16,7 @@ function closeNav() {
       var obj = JSON.parse(posts);
       console.log(obj);
       if(obj!=null){
-        console.log(obj[1].content-1);
+        //Contents that are retrieve from json and render it to the html file for COST section
         var result = "";
         var template = ' <div class=costdata>\
         <span class="glyphicon sign">&#xe084;</span>\
@@ -33,8 +34,9 @@ function closeNav() {
 
                  result = template.replace("{text-1}",obj[0].title).replace("{text-2}",obj[0].dollar).replace("{text-3}",obj[0].day).replace("{text-4}",obj[0].runrate).replace("{text-5}",obj[0].dollardata).replace("{text-6}",obj[0].instance);
               
-            //   console.log(result);
+           
               document.getElementById('first').innerHTML = result;
+          //Contents that are retrieve from json and render it to the html file for MONITORING section
               var results = "";
               var templates = '  <div class=inventory>\
               <span class="glyphicon sign">&#xe084;</span>\
@@ -64,9 +66,9 @@ function closeNav() {
       
                        results = templates.replace("{text-1}",obj[1].content_1).replace("{text-2}",obj[1].content_2).replace("{text-3}",obj[1].content_3).replace("{text-4}",obj[1].content_4).replace("{text-5}",obj[1].content_5).replace("{text-6}",obj[1].content_6).replace("{text-7}",obj[1].content_7).replace("{text-8}",obj[1].content_8).replace("{text-9}",obj[1].content_9).replace("{text-10}",obj[1].content_10).replace("{text-11}",obj[1].content_11).replace("{text-12}",obj[1].content_12);
                     
-                    console.log(results);
+                   
                     document.getElementById('second').innerHTML = results;
-
+                    //Contents that are retrieve from json and render it to the html file for INVENTORY section
                     var results = "";
                     var templates = '  <div class=inventory>\
                     <span class="glyphicon sign">&#xe084;</span>\
@@ -99,11 +101,10 @@ function closeNav() {
                 </div>'  ;
             
                              results = templates.replace("{text-1}",obj[2].content_1).replace("{text-2}",obj[2].content_2).replace("{text-3}",obj[2].content_3).replace("{text-4}",obj[2].content_4).replace("{text-5}",obj[2].content_5).replace("{text-6}",obj[2].content_6).replace("{text-7}",obj[2].content_7).replace("{text-8}",obj[2].content_8).replace("{text-9}",obj[2].content_9).replace("{text-10}",obj[2].content_10).replace("{text-11}",obj[2].content_11).replace("{text-12}",obj[2].content_12).replace("{text-13}",obj[2].content_13).replace("{text-14}",obj[2].content_14);
-                          
-                          console.log(results);
+                      
                           document.getElementById('third').innerHTML = results;
 
-
+                        //Contents that are retrieve from json and render it to the html file for UTILIZATION section
                           var results = "";
                           var templates = '  <div class=inventory>\
                           <span class="glyphicon sign">&#xe084;</span>\
@@ -126,10 +127,10 @@ function closeNav() {
                   
                                    results = templates.replace("{text-1}",obj[3].content_1).replace("{text-2}",obj[3].content_2).replace("{text-3}",obj[3].content_3);
                                 
-                                console.log(results);
+                               
                                 document.getElementById('fourth').innerHTML = results;
 
-
+                            //Contents that are retrieve from json and render it to the html file for COMPLIANCE section
                                 var results = "";
                                 var templates = '  <div class=upperpart>\
                                 <span class="glyphicon sign">&#xe084;</span>\
@@ -161,11 +162,10 @@ function closeNav() {
                             </div>' ;
                         
                                          results = templates.replace("{text-1}",obj[4].content_1).replace("{text-2}",obj[4].content_2).replace("{text-3}",obj[4].content_3).replace("{text-4}",obj[4].content_4).replace("{text-5}",obj[4].content_5).replace("{text-6}",obj[4].content_6).replace("{text-7}",obj[4].content_7).replace("{text-8}",obj[4].content_8).replace("{text-9}",obj[4].content_9).replace("{text-10}",obj[4].content_10).replace("{text-11}",obj[4].content_11);
-                                      
-                                      //console.log(results);
+                                  
                                       document.getElementById('fifth').innerHTML = results;
 
-
+                                    //Contents that are retrieve from json and render it to the html file for STORAGE section
                                       var results = "";
                                       var templates = '  <div class=storage>\
                                       <span class="glyphicon sign">&#xe084;<span class=storagecontent>{text-1}</span></span>\
