@@ -171,8 +171,9 @@ function closeNav() {
                                       <span class="glyphicon sign">&#xe084;<span class=storagecontent>{text-1}</span></span>\
                                        <p class=instancehrdata>{text-2}<span class=use>{text-3}</span></p>' ;
                                                results = templates.replace("{text-1}",obj[5].content_1).replace("{text-2}",obj[5].content_2).replace("{text-3}",obj[5].content_3);
-                                            console.log(results);
+                                           
                                             document.getElementById('sixth').innerHTML = results;
+                                            //Contents that are retrieve from json and render it to the html file for HEADER section
                                             document.getElementById('101').innerHTML=obj[6].id_1;
                                             document.getElementById('102').innerHTML=obj[6].id_2;
                                             document.getElementById('103').innerHTML=obj[6].id_3;
