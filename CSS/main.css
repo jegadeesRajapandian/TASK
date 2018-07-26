@@ -1,0 +1,862 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* RESET.CSS ENDS */
+/* BACKGROUND AND WIDTH OF BODY TAG IS DEFINED */
+body{
+    background-image:url("/assests/bg-1@2x.png") ;
+    background-repeat:no-repeat;
+	background-size:cover;
+    width:100%;
+}
+/* WIDTH AND MAX-WIDTH IS DEFINED FOR MAINTAINING GRID STRUCTURE*/
+.headersection{				
+	width:100%;
+}
+.headermaxwidth{
+	max-width:90%;
+	margin:0px auto;
+}
+/* FUNCTIONALITIES FOR SYMBOLS AND MENU ICON*/ 
+.icon{
+	color:#ffffff;
+}
+.menuicon{
+	color:#ffffff;
+	cursor: pointer;
+	font-size:30px;
+}
+.notification{
+	color:#ffffff;
+}
+.sidenav {
+    box-sizing:border-box;
+	background-color: #ed0295;
+	height: 100%;
+	left: 0;
+	overflow-x: hidden;
+	opacity:1;
+	position: fixed;
+	padding-top: 60px;
+    top: 0;
+    transition: 0.5s;
+	width: 0%;
+	z-index: 1;
+}
+.sidenav a {
+    box-sizing:border-box;
+	color:#777777;
+	display: block;
+	font-size: 25px;
+	font-weight:500;
+	opacity:1;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #000000;
+}
+
+.sidenav .closebtn {
+    box-sizing:border-box;
+	font-size: 36px;
+	margin-left: 50px;
+	position: absolute;
+	right: 25px;
+    top: 0;  
+}
+
+.topsection{
+    align-items:center;
+    box-sizing:border-box;
+	background-color: #000000;
+	display:flex;
+	justify-content:space-between;
+	opacity:0.75;
+	padding:1%;
+}
+/* HEADERSECTION ENDS */
+
+.appicon{
+    box-sizing:border-box;
+	color:#717171;
+	padding:5%;
+}
+.allapplications{
+	color:#717171;
+	font:82% "Gotham";
+}
+.applicationright{
+	align-items:center;
+	display:flex;
+	justify-content:space-between;
+} 
+.arrowdown{
+    box-sizing:border-box;
+	color:#ed0295;
+	font-size:82%;
+	padding:5%;
+}
+.applicationleft{
+	align-items:center;
+	display:flex;
+	justify-content:space-between;
+
+}
+.applicationstatus{
+    box-sizing:border-box;
+	color:#000000;
+	font:82% "Gotham";
+	padding:5px 30px;
+}
+.application{
+	align-items: center;
+	background-color: #ffffff;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+	display:flex;
+	justify-content:space-between;
+	width: 100%;
+}
+.builddata{
+    box-sizing:border-box;
+	padding:5px 30px;
+}
+ .build{
+	color:#717171;
+	font:82% "Gotham";
+	
+} 
+.centerrectangle{
+       box-sizing:border-box;
+	   display: inline-block;
+	   height:100%;
+	   justify-content: space-between;
+       margin:4px;
+	   transition:0.3s;
+	   width:24%;
+}
+.compliance{
+    box-sizing:border-box;
+	color:#717171;
+	font:14px "Gotham";
+	padding:0% 1%;
+	
+	
+}
+.costdata{
+	align-items:center;
+	display:flex;
+	justify-content: center;
+}
+.cost{
+    box-sizing:border-box;
+	color:#717171;
+	font:14px "Gotham";
+	padding:0% 1%;
+}
+ .circle{
+  border-radius:7px;
+  background-color: #95dd46;
+  display:inline-block;
+  height: 12px;
+  width: 12px;
+ 
+}
+.day{
+	color:#ed0295;
+	font:12px "Gotham";
+	font-weight:normal;
+	
+}
+.days{
+    color: #ed0295;
+    font: 12px "Gotham";
+    font-weight: normal;
+    position: relative;
+    top: 20%;
+    left: 1%;
+}
+.figure{
+    display:none;
+    transition-delay: 2s;
+}
+/* #fifth{
+	align-items: center;
+} */
+#sixth{
+	align-items:center;
+}
+/* #first{
+	align-items: center;
+} */
+/* #fourth{
+	align-items: center;
+} */
+html{
+    overflow: hidden;
+}
+ .intakedata{
+    box-sizing:border-box;
+	padding:5px 30px;
+ }
+ .instancess{
+	position:relative;
+	top:20%;
+}
+.intake{
+	color:#717171;
+	font:82% "Gotham";
+
+}
+.image1{
+	height:80%;
+}
+.instancehrdatas{
+    box-sizing:border-box;
+	color:#ed0295;
+	font-weight: normal;
+	font:14px "Gotham";
+	padding:0px 12px;
+}
+.instancehrdata{
+	color:#ed0295;
+	font-weight: normal;
+	font:14px "Gotham";
+
+}
+.instancehr{
+	color: #555555;
+	font:10px  "Gotham";
+}
+.instancehr-copy{
+	color:#777777;
+	font:10px  "Gotham";
+}
+.inventory{
+    align-items:center;
+    box-sizing:border-box;
+	display: flex;
+	justify-content:center;
+	padding:0% 1%;
+}
+.instances{
+	left:-42%;
+	position:relative;
+	top: 50%;
+}
+.image{
+    box-sizing:border-box;
+    margin:0px 50px;
+	width:70%;
+
+}
+.image1{
+    display:none;
+}
+.image3{
+	display:none;
+	width:105%;
+}
+.Line {
+	border: solid 1px #9b9b9b;
+	height:20px;
+  }
+
+  .lastscanned{
+    box-sizing:border-box;
+	color: #aaaaaa;
+	display:flex;
+	font:10px  "Gotham";
+	justify-content: center;
+	padding:10px;
+	
+	
+  }
+.leftrectangle{
+    box-sizing:border-box;
+	display: inline-block;
+	justify-content: space-between;
+	height:100%;
+    margin:4px;
+	transition:0.3s;
+	width:24%;
+
+}
+
+.rectangle.activeclass{
+    width:99%;
+}
+.rectangle.activeclass .reddatass{
+    display:none;
+}
+.rectangle.subactiveclass{
+    width:99%;
+}
+.rectangle.inactiveblock{
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+	cursor: pointer;
+	display: flex;
+	
+	flex-direction:column;
+	height:49%;
+    justify-content: space-between;
+	margin:1.5% 0.5%;
+	padding:5%;
+    
+    width:99%; 
+}
+.lowercost{
+	align-items:center;
+	display:flex;
+	justify-content: center;
+}
+.lowerpart{
+	display: flex;
+	justify-content: space-around;
+	width:100%;
+	
+}
+.lowerparts{
+	display: none;
+	justify-content: space-around;	
+}
+.lowerinventory{
+	align-items: center;
+	display:flex;
+	justify-content:space-between;
+}
+.lowercompliance{
+	align-items: center;
+	display:flex;
+	justify-content:space-between;
+}
+.lowestinventory{
+	display:flex;
+	justify-content:space-between;
+}
+.middlecost{
+	display:flex;
+	justify-content: center;
+
+}
+.middlemonitoring{
+	align-content:center;
+	display:flex;
+	justify-content: center;
+}
+.middleinvent{
+    display:block;
+    text-align:center;
+}
+.middleinventt{
+    display:none;
+    text-align:center;
+}
+.middleinvents{
+    display:block;
+    text-align:center;
+}
+.middleinventory{
+	align-items:center;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+.middlecostdata{
+	color: #ed0295;
+	display:block;
+    font:28px "Gotham";
+    text-align:center;
+}
+.mainsection{
+	width:100%;
+}
+ 
+.mainmaxwidth{
+	height:95vh;
+	max-width:86%;
+	margin:0px auto;
+}
+
+.overall{
+	font:10px "Gotham";
+	font-weight:normal;
+
+}
+.oddnum{
+	font:8px "Gotham";
+	font-weight:normal;
+}
+
+.prod{
+	color:#ed0295;
+}
+.productiondata{
+    box-sizing:border-box;
+	padding:5px 30px;
+}
+.production{
+	color:#717171;
+	font:82% "Gotham";
+	
+}
+.reddata{
+	display:flex;
+	flex-direction: row;
+	left:12%;
+	position: relative;
+}
+.rectanglesection{
+	box-sizing:border-box;
+    display:flex;
+    height:90%;
+	justify-content: space-between;
+    margin:0px auto;
+	padding:5px 0px;
+}
+.runrate1{
+	left: -30%;
+    position: relative;
+    top: 45%;
+}
+.rectangle{
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+	cursor: pointer;
+	display: flex;
+	flex:1;
+	flex-direction:column;
+	height:49%;
+    justify-content: space-between;
+	margin:1.5% 0.5%;
+	padding:5%;
+    transition:all 0.5s;
+    width:99%;
+}
+.rectangle.activeclass{
+   
+    box-sizing:border-box;
+     height:83%; 
+    margin:2.5px 1.5px;
+   
+}
+.rectangle.activeclass .middleinvent{
+   display: block;
+   
+}
+.rectangle.activeclass .unique{
+   display:none;
+}
+.rectangle.inactiveblock .middleinventt{
+	display:block;
+ }
+.rectangle.subactiveclass .middleinventt{
+	display: flex;
+}
+.rectangle.activeclass .image3{
+    box-sizing:border-box;
+    display:block;
+    margin:0px 90px;
+    width:75%;
+ }
+.rectangle.activeclass .hide{
+    display:none;
+ }
+.rectangle.activeclass .lowerparts{
+    display:flex;
+ }
+.rectangle.activeclass .figure{
+    display:block;
+ }
+.rectangle.activeclass .lowerpart{
+    display:none;
+}
+.rectangle.activeclass .image1{
+    display:block;
+}
+.rectangle.activeclass .middleinvent{
+    display:block;
+}
+.rectangle.activeclass .middleinvents{
+    display:block;
+}
+.rectangle.subactiveclass{
+     height:15%; 
+}
+.rectangle.subactiveclass .figure{
+   
+    display:none;
+}
+.rectangle.subactiveclass{
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:row;
+    margin:2px;
+   
+}
+.rectangle.subactiveclass .lowerpart{
+    display:none;
+}
+.rectangle.subactiveclass .runrate{
+    top:30%;
+}
+.rectangle.subactiveclass .unique{
+    display:none;
+}
+.rectangle.inactiveblock{
+    animation-duration: 4s;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+	cursor: pointer;
+    display: flex;
+    flex:1;
+	flex-direction:column;
+	 height:49%; 
+    justify-content: space-between;
+	padding:5%;
+	width:99%;
+}
+.reddatas{
+    display: flex;
+    flex-direction: row;
+}
+.reddatass{
+    display: flex;
+    flex-direction: row;
+    left: 20%;
+    position: relative;
+}
+.rightrectangle{
+	box-sizing:border-box;
+	height:100%;
+    margin:4px 4px;	
+	transition:all 0.3s;
+	width:49%;
+}
+.active{
+	width:49%;
+}
+.notactive{
+    width:24%;
+}
+.runrate{
+	left:-15%;
+	position:relative;
+	top: 45%;
+}
+#sixth{
+	align-items:center;
+	display:flex;
+}
+.sign{
+	color:#717171;
+}
+.securitydot{
+    box-sizing:border-box;
+	background-color:#000000;
+	padding:15px 20px;
+}
+.security{
+	color:#717171;
+	display: inline-block;
+	font:82% "Gotham";
+	
+}
+
+.storage{
+    box-sizing:border-box;
+	align-items:center;
+	display:flex;
+	justify-content: space-between;
+	padding: 30px 20px;
+}
+.storagecontent{
+    box-sizing:border-box;
+	color: #717171;
+	font:14px "Gotham";
+	font-weight: normal;
+	padding:0% 1%;
+
+}
+.semicircle{
+    box-sizing:border-box;
+	width: 30px;
+    height: 15px; /* as the half of the width */
+    background-color:#ffffff;
+    border-top-left-radius: 200px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 200px; /* 100px of height + 10px of border */
+    border: 5px solid #ed0295;
+    border-bottom: 0;
+}
+#thirds{
+  display:none;
+}
+
+.upperpart{
+	align-items:center;
+	display:flex;
+	justify-content:center;
+	
+}
+.upperpart-copy{
+	align-items:center;
+	display:flex;
+	
+}
+ul{
+	height: 99%;
+}
+.uniquepart{
+	display:flex;
+	justify-content: center;
+}
+.use{
+	color: #ed0295;
+	font:10px "Gotham";
+	font-weight:normal;
+}
+.uniqueuse{
+	color:#777777;
+	font:10px "Gotham";
+	font-weight:normal;
+}
+.unique{
+	color:#777777;
+	display:block;
+	font:10px "Gotham";
+}
+/* MAINSECTION ENDS */
+.cloud{
+	color:#ed0295;
+	font-weight:normal;
+	outline-color: #ed0295;
+	
+}
+.footersection{
+	display:flex;
+	justify-content:center;
+}
+.footersentence{
+	color:#ffffff;
+	font:12px "Gotham";
+	font-weight:lighter;
+	font-style: normal;
+}
+
+
+@media only screen and (max-width:800px){
+	.application{
+		display:none;
+	}
+	.cost{
+		font-size:80%;
+	}
+	.compliance{
+		font-size:80%;
+	}
+	.day{
+		font-size: 7px;
+    }
+	.instances{
+		font-size:7px;
+	}
+	.instancehrdata{
+		font-size:62%;
+	}
+	.instancehrdatas{
+		font-size:62%;
+	}
+	.instancehr{
+		font-size:52%;
+	}
+	.lowerpart{
+		display:none;
+	}
+	.lastscanned{
+		display:none;
+	}
+	.lowerparts{
+		display:none;
+	}
+	.instancehr-copy{
+		font-size:52%;
+	}
+	.rectanglesection{
+		display:flex;
+		flex-direction:column;
+	}
+    .leftrectangle{
+		height:25%;
+		transition:height 2s;
+		width:99%;
+	}
+	.centerrectangle{
+		height:25%;
+		transition:height 2s;
+		width:99%;
+	}
+	.rightrectangle{
+		height:25%;
+		transition:height 2s;
+		width:99%;
+	}
+	.rectangle.activeclass{
+		padding:3%;
+	}
+	.rectangle.subactiveclass{
+		padding:3%;
+	}
+	.rectangle.inactiveblock{
+		padding:3%;
+	}
+	.rectangle.activeclass .image{
+		display: flex;
+		width: 10%;
+		position: relative;
+		top: -30px;
+		left: 20%;
+	}
+	.rectangle.activeclass .lowerparts{
+		display: none;
+	}
+	.rectangle.activeclass .image1{
+		display: flex;
+		width: 10%;
+	}
+	.rectangle.activeclass .image3{
+		display: flex;
+		width: 10%;
+	}
+	.rectangle.inactiveblock .reddata{
+		 left:22%;
+	}
+	/* .rectangle.inactiveblock .reddatass{
+		top:30px;
+	} */
+	.rectangle.activeclass .reddatass{
+		display:flex;
+		
+	}
+	/* .rectangle.activeclass .reddatass{
+		top:20px;
+	} */
+	.rectangle.activeclass{
+		flex-direction:row;
+		height:70%;
+		width:100%;
+		transition:height 0.5s;
+	}
+	.rectangle.subactiveclass{
+		flex-direction:row;
+		height:50%;
+		width:100%;
+		transition:height 0.5s;
+	}
+	.rectangle.inactiveblock{
+		flex-direction: row;
+		height:60%;
+		width:100%;
+		transition:height 0.5s;
+	}
+	.unique{
+		display:none;
+	}
+} 
+@media only screen  and (max-width:590px){
+	.uniqueuse{
+		font:8px "Gotham";
+	}
+	.unique{
+		
+		font:8px "Gotham";
+	}
+}
+@media only screen  and (max-width:1124px){
+    .application{
+        display:none;
+	}
+}
+	@media only screen and (max-width:800px){
+    .image{
+        display:none;
+    }
+	
+} 
+/* @media only screen and (min-width:800px) and (max-width:1000px){
+	.leftrectangle{
+		width:85%;
+	}
+	.centerrectangle{
+		width:85%;
+	}
+	.rightrectangle{
+		width:85%;
+	}
+    .rectangle.activeclass{
+		width: 85%;
+	}
+	.rectangle.subactiveclass{
+		width: 85%;
+	}
+	.rectangle.inactiveblock{
+		width: 85%;
+	}
+	} */
+	
+/* MAINSECTION ENDS */
+@font-face{
+	font-family: "Gotham";
+	src: url("/assests/Gotham-Black.ttf");
+}

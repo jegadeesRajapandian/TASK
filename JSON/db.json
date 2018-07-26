@@ -1,0 +1,59 @@
+[
+     
+     {
+            
+        "title":"COST",
+        "dollar":"$24K",
+        "day":"/DAY",                                                                       
+        "runrate":"RUNRATE",
+        "dollardata":"$0.40",
+        "instance":"/Instance HR"
+
+    },
+    {
+        "title":"MONITORING",
+        "view":"3.4M",
+        "requests":"Requests",
+        "duration":"Last 15 Minutes",
+        "count":"3,142",
+        "type":"Unique Visitors",
+        "views":["30.5K","10K","17.4K"],
+        "subtitle":["TMNG","SOCL","REBL"]
+    },
+    {
+        "title":"INVENTORY",
+        "view":"6.5K",
+        "requests":"Current",
+        "duration":"Instances",
+        "count":"25K",
+        "type":"Unique Last 30 Days",
+        "views":["153","57","132","9000"],
+        "subtitle":["LBs","ASG","S3","EDS"]
+    },
+    {
+        "title":"UTILIZATION",
+        "value":"3.9%",
+        "subtitle":"Overall"
+    },
+    {
+        "title":"COMPLIANCE",
+        "view":"Last Scanned 50 minutes ago",
+        "views":["200,000","25K/","280 New","15","24","77.24%","50.00%","100.00%","97.48%"],
+        "subtitles":["Items Scanned","Issues Found","Auto-Fixed","Issues Remaining","Overall","Compliance","Tagging","Certificates","Patching"]
+        
+       
+    },
+    {
+        "title":"STORAGE",
+        "data":"2.35",
+        "subtitle":"In Use",
+        "byte":"/PB",
+        "storage":["518.56TB","937.08TB","8.00TB"],
+        "subtitles":["EBS","S3","Other"]
+    },
+    {
+        "production":"43",
+        "build":"5",
+        "intake":"7"
+    }
+]
